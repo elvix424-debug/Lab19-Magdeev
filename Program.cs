@@ -101,3 +101,25 @@ else
 {
     Console.WriteLine($"Первый индекс: {index}");
 }
+
+
+
+// // 13. Самостоятельное задание
+// // Вариант 3
+
+int CountWordsManually(string text)
+{
+    int count = 0;
+
+    for (int i = 0; i < text.Length; i++)
+    {
+        if (text[i] != ' ' && (i == 0 || text[i - 1] == ' '))
+        {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+Console.WriteLine(CountWordsManually(text));
